@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- I've never seen the head content separated so neatly! -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,6 +28,7 @@
        <section class="container-fluid top-header">
            <div class="row">
                <div class="col">
+<!--           why is this a ul?          -->
                 <ul class="nav pull">
                     <li class="nav-item">
                       <a class="nav-link active" href="#">Pull Up
@@ -43,10 +45,11 @@
                <div class="col-sm-6 logoh">
                    <img src="media/umbrella-logo.png" class="img-fluid logop"> 
                    <h1 class="logo">Graphics<span style="color:#465B0C">Umbrella</span></h1>
-                    <h2>Premium style free graphics</h2>   
+                    <h2>Premium style free graphics</h2>   <!-- this isn't a subheader. Use the p tag instead-->
                </div>
 
                <div class="col-sm-6">
+                   <!-- Nice structure -->
                    <nav class="top-nav">
                        <ul class="nav justify-content-end top-nav-list">
                            <li class="nav-item top-nav-item">
@@ -128,9 +131,13 @@
 
            <section class="container-fluid services">
             <div class="row">
+                <!-- You may want to use .col-md-3 instead of just .col; this will allow them to collapse on small devices-->
                 <div class="col pros">
                     <span class="icon-recycle icon"></span>
                     <div class="content">
+                        <!-- Why use an h4? This is not a header. Instead use a p with two span tags separating the text
+                            ex: <p><span class="big-text">amazing</span><span class="small-text">support</span>
+                        -->
                         <h4>AMAZING</h4>
                         <p>Support</p>
                     </div>
@@ -164,7 +171,7 @@
 
            <section class="container-fluid portfolio">
                <div class="row">
-                   <h3 class="low-header">RECENT FROM <span style="color:#A0C63F">PORTFOLIO</span></h3>
+                   <h3 class="low-header">RECENT FROM <span style="color:#A0C63F">PORTFOLIO</span></h3> <!-- No to inline styling!! Use your css stylesheet-->
                </div>
                <div class="row">
                    <div class="col block">
